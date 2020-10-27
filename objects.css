@@ -1,0 +1,13 @@
+.wolves {
+    position: absolute;
+    left: -1000px;
+    top: -1000px;
+}
+
+#board {
+    height: 500px;
+    width: 1000px;
+    background-color: rgb(6, 136, 119);
+    align-content: center;
+    align-self: center;
+}

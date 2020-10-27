@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Running JS functions</title>
+    <link rel="stylesheet" type="text/css" href="objects.css" media="all" />
+    <script src="firstClassFunctions.js"></script>
+    <script src="WolfObject.js"></script>
+    <script src="objectsWithConstructor.js"></script>
+    <script src="objectsNoConstructor.js"></script>
+    <script>
+        const wolves = new Array();
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>First class functions</h1>
+        <button onclick="runAdd();">Assigning function to variable</button>
+        <button onclick="runEvaluate();">Passing function as argument</button>
+        <button onclick="runFind();">Returning a function from a function</button>
+    </div>
+    <div>
+        <h1>Objects</h1>
+        <button id="without" onclick="makeWolvesNoConstructor();">Create wolves with non-paramterized constructor</button>
+        <button id="with" onclick="makeWolvesWithConstructor();">Create wolves with parametrized constructor</button>
+        <button onclick="moveWolves();">Move wolves randomly</button>
+        <div id="board">
+            <img class="wolves" id="wolf1" src="wolf.gif">
+            <img class="wolves" id="wolf2" src="wolf.gif">
+        </div>
+    </div>
+</body>
+
+</html>
